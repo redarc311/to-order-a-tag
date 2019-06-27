@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, FixedLayout} from '@vkontakte/vkui';
-import './SizeSelection.css';
+import '../style.css';
 
 const SizeSelection = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>

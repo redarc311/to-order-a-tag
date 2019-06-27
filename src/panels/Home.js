@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import logo from '../img/logo.png';
-import './Home.css';
+import '../style.css';
 import { Panel, Button, Group, Div, PanelHeader } from '@vkontakte/vkui';
 
 const Home = ({ id, go}) => (

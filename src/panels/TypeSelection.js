@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, List, Cell, FixedLayout} from '@vkontakte/vkui';
-import './TypeSelection.css';
+import '../style.css';
 import bumYarlik from '../img/bumYarlik.svg';
 import nakleyka from '../img/nakleyka@4x.svg';
 import prishivnaya from '../img/prishivnaya.svg';
@@ -14,6 +14,8 @@ const TypeSelection = ({id, go}) => (
 			ВЫБЕРИТЕ <strong>ТИП</strong>
 		</PanelHeader>
 		<Group className="Group1">
+
+			<button id='button'>проверка</button>
 
 				<Div style={{display: 'flex'}}>
 					<Button className="Button" after={<img src={prishivnaya} alt="prishivnaya"/>} size="xl" stretched level="2" onClick={go} data-to="welcomeScreen">ПРИШИВНАЯ</Button>

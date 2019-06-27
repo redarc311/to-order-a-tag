@@ -1,7 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, FixedLayout} from '@vkontakte/vkui';
-import './BackgroundColorSelection.css';
+import '../style.css';
+import { Panel as ColorPickerPanel } from 'rc-color-picker';
+import ColorPicker from 'rc-color-picker';
+import 'rc-color-picker/assets/index.css';
+
+function onChange(obj) {
+	console.log(obj);
+  };
+function changeHandler(colors) {
+	console.log(colors);
+  };
 
 const BackgroundColorSelection = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
@@ -9,8 +19,24 @@ const BackgroundColorSelection = ({id, go}) => (
 			ВЫБЕРИТЕ <strong>ЦВЕТ ФОНА</strong>
 		</PanelHeader>
 		<Group className="Group">
+			<Div style={{margin: '20px 20px 20px', textAlign: 'center'}}>
+					Выбор цвета
+					<div style={{ backgroundColor: '#E27974', padding: 20 }}>
+						<ColorPickerPanel alpha={80} color={'#477898'} onChange={onChange} mode="HSB" />
+					</div>
+			</Div>
+			<ColorPicker color={'#36c'} onChange={changeHandler} >
+				<Button className="Button"size="xl" level="2">
+					Создай свою бирку!!!
+				</Button>
+			</ColorPicker>
 			
 			
+
+
+
+
+
 
 			
 
