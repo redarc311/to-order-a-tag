@@ -1,0 +1,30 @@
+.Group {
+    border: 0;
+    background: #E27974;
+    height: 100vh;
+}
+
+.p1 {
+    display: flex;
+    color: white;
+    font-family: "Myriad Pro";
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #E27974;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 45%;
+    margin-bottom: 30%;
+}
+
+.Button {
+    display: flex;
+    color: #E27974;
+    font-family: "Myriad Pro";
+    font-weight: lighter;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
