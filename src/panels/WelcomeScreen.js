@@ -9,8 +9,8 @@ const WelcomeScreen = ({id, go}) => (
 			О КОНСТРУКТОРЕ
 		</PanelHeader>
 		<Group className="Group">
-
-			<p className="p1">Мы предлагаем Вам самостоятельно создать макет бирки для печати. Если у вас возникли вопросы, то
+			
+			<p className="p">Мы предлагаем Вам самостоятельно создать макет бирки для печати. Если у вас возникли вопросы, то
                         напишите нам, и мы с радостью ответим.</p>
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>

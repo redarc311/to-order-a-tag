@@ -1,7 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Panel, PanelHeader, Group, Button, Div, FixedLayout} from '@vkontakte/vkui';
+import {Panel, PanelHeader, Group, Button, Div, FixedLayout, HorizontalScroll} from '@vkontakte/vkui';
 import '../style.css';
+import bumYarlik from '../img/bumYarlik.svg';
+
+const itemStyle = {
+    flexShrink: 0,
+    width: 80,
+    height: 94,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    fontSize: 12
+  };
 
 const AddingPictures = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
@@ -14,6 +25,20 @@ const AddingPictures = ({id, go}) => (
 		
 		Делаем диалог выбора картинки из галереи или загрузку файла. File.
 		и еще ниже делаем пояснение
+			<HorizontalScroll>
+        	  <div style={{ display: 'flex' }}>
+        	    <div style={{ ...itemStyle, paddingLeft: 4 }}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+				</div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	</div>
+        	</HorizontalScroll>
+
 
 		<p>Помните, что четкость печати напрямую зависит от качества изображения</p>
 			

@@ -18,6 +18,7 @@ import BackgroundColorSelection from './panels/BackgroundColorSelection';
 import SendLayout from './panels/SendLayout';
 
 //начало приложения
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);

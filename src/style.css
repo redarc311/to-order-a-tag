@@ -2,7 +2,8 @@
 .Group {
     border: 0;
     background: #E27974;
-    background-size: contain; 
+    background-size: contain;
+    justify-content: center; 
     height: 100vh;
 }
 
@@ -16,6 +17,7 @@
 
 .p {
     display: flex;
+    margin: 20px;
     color: white;
     font-family: "Myriad Pro";
     justify-content: center;
@@ -33,7 +35,7 @@
     border-radius: 500px;
 }
 
-.button {
+.Button2 {
     color: #E27974;
     font-family: "Myriad Pro";
     font-weight: lighter;
