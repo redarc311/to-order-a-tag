@@ -11,7 +11,7 @@ const itemStyle = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    fontSize: 12
+	fontSize: 12
   };
 
 const AddingPictures = ({id, go}) => (
@@ -25,9 +25,44 @@ const AddingPictures = ({id, go}) => (
 		
 		Делаем диалог выбора картинки из галереи или загрузку файла. File.
 		и еще ниже делаем пояснение
-			<HorizontalScroll>
-        	  <div style={{ display: 'flex' }}>
+			<HorizontalScroll className="HorizontalScroll">
+        	  <div style={{ display: 'flex'}}>
         	    <div style={{ ...itemStyle, paddingLeft: 4 }}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+				</div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+				<div style={{ ...itemStyle, paddingLeft: 4 }}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+				</div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+				<div style={{ ...itemStyle, paddingLeft: 4 }}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+				</div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+				<div style={{ ...itemStyle, paddingLeft: 4 }}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+				</div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>
+        	    <div style={itemStyle}>
+					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
+        	    </div>        	    <div style={{ ...itemStyle, paddingLeft: 4 }}>
 					<Button before={<img src={bumYarlik} alt="bumYarlik"/>}></Button>
 				</div>
         	    <div style={itemStyle}>
