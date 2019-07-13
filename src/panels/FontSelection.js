@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, FixedLayout, Input} from '@vkontakte/vkui';
 import '../style.css';
 import DynamicFont from 'react-dynamic-font';
+import DinamicFontPrint from 'DinamicFontPrint'
 
 
 
@@ -15,14 +16,13 @@ const FontSelection = ({id, go}) => (
 			<Group className="Group">
 
 				Тут используем Input.
-				<DynamicFont smooth content={'По идее сюда нужно ввести переменную в которую импут пишется'} />
+				<DinamicFontPrint smooth content={'По идее сюда нужно ввести переменную в которую импут пишется'} />
 
 				<Input 
 					top="Имя" 
 					placeholder="Начните вводить текст"
 					alignment="center"
-					
-					 />
+					/>
 
 				<FixedLayout vertical="bottom">
 					<Div style={{display: 'flex'}}>
