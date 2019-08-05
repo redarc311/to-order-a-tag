@@ -36,13 +36,14 @@
 }
 
 .Button2 {
-    color: #E27974;
+    color: #ffffff;
     font-family: "Myriad Pro";
     font-weight: lighter;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    border-radius: 500px;
+    background-color: rgba(78, 76, 235, 0.829);
+    border-radius: 0px;
+    border-block-color: #000000;
 }
 
 .HorizontalScroll {
