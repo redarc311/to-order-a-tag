@@ -4,6 +4,10 @@ import logo from '../img/logo.png';
 import '../style.css';
 import { Panel, Button, Group, Div, PanelHeader } from '@vkontakte/vkui';
 
+//Тут добавим авторизацию в ВК или указание контактных данных на модальном окне из гайда. 
+//Это всё, что бы можно было использовать и вне ВК окна.
+// Выглядит так: сперва кнопка авторизации и передачи данных в пропсы из ВК. ДЛя ВК это fetchedUser для всего остального имя/фамилия и почта.
+
 const Home = ({ id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
 		<PanelHeader>

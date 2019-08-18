@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, FixedLayout} from '@vkontakte/vkui';
 import '../style.css';
 
+// Человек залогинился. Нужно обратиться к нему по ФИО и уже потом говорить, что мы предлагаем.
+
 const WelcomeScreen = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
 		<PanelHeader>

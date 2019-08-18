@@ -7,6 +7,9 @@ import nakleyka from '../img/nakleyka@4x.svg';
 import prishivnaya from '../img/prishivnaya.svg';
 import termo from '../img/termo@4x.svg';
 //Тут мы поставим несколько кнопок и при нажатии на однук из них будем выводить условным рендерингом InfoRow с информацией.
+//https://webformyself.com/sozdanie-form-s-pomoshhyu-react/
+//https://codepen.io/seraj/pen/mvMaJL
+
 
 const TypeSelection = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
