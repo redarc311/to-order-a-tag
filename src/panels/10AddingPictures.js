@@ -82,8 +82,22 @@ const AddingPictures = ({id, go}) => (
 
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="textColorSelection">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="backgroundColorSelection">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="textColorSelection"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						evel="2" 
+						onClick={go} 
+						data-to="backgroundColorSelection"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

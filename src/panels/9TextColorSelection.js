@@ -25,19 +25,31 @@ const TextColorSelection = ({id, go}) => (
 					<ColorPickerPanel alpha={80} color={'#477898'} onChange={onChange} mode="HSB" />
 				</div>
 			</Div>
+			
 			<ColorPicker color={'#36c'} onChange={changeHandler} >
 				<Button className="Button"size="xl" level="2">
 					Создай свою бирку!!!
 				</Button>
 			</ColorPicker>
 
-
-			
-
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="fontSelection">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="addingPictures">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="fontSelection"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="addingPictures"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

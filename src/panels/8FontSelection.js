@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Panel, PanelHeader, Group, Button, Div, FixedLayout, Input} from '@vkontakte/vkui';
 import '../style.css';
 
-import DinamicFontPrint from '../MyComponents/DinamicFontPrint'
+//import DinamicFontPrint from '../MyComponents/DinamicFontPrint'
 // Нужно попробовать. Это идея динамического ввода. 
 //const Input = (props) => (
 //	<input type="text" onChange={props.handleChange} />
@@ -35,6 +35,7 @@ import DinamicFontPrint from '../MyComponents/DinamicFontPrint'
 //		)
 //	  }
 //	}
+//<DinamicFontPrint smooth content={'По идее сюда нужно ввести переменную в которую импут пишется'} />
 
 const FontSelection = ({id, go}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
@@ -45,7 +46,7 @@ const FontSelection = ({id, go}) => (
 			<Group className="Group">
 
 				Тут используем Input.
-				<DinamicFontPrint smooth content={'По идее сюда нужно ввести переменную в которую импут пишется'} />
+				
 
 				<Input 
 					top="Имя" 
@@ -63,7 +64,14 @@ const FontSelection = ({id, go}) => (
 							onClick={go} 
 							data-to="shapeSelection"
 						>Назад</Button>
-						<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="textColorSelection">Далее</Button>
+						<Button 
+							className="Button" 
+							size="xl" 
+							stretched 
+							level="2" 
+							onClick={go} 
+							data-to="textColorSelection"
+						>Далее</Button>
 					</Div>
 				</FixedLayout>
 			</Group>

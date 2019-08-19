@@ -12,12 +12,24 @@ const SizeSelection = ({id, go}) => (
 			
 			Тут будем использовать компонент Slider для отображения ползунков размера.
 
-			
-
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="shapeSelection">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="fontSelection">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="shapeSelection"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="fontSelection"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

@@ -30,20 +30,25 @@ const BackgroundColorSelection = ({id, go}) => (
 					Создай свою бирку!!!
 				</Button>
 			</ColorPicker>
-			
-			
-
-
-
-
-
-
-			
 
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="addingPictures">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="sendLayout">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="addingPictures"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="sendLayout"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

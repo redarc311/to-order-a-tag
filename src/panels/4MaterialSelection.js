@@ -25,8 +25,22 @@ const MaterialSelection = ({id, go}) => (
 
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="typeSelection">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="viewSelection">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="typeSelection"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="viewSelection"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

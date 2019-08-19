@@ -21,9 +21,13 @@ const Home = ({ id, go}) => (
 				
 				<p className="p">Добро пожаловать!!!</p>
 
-				<Button className="Button"size="xl" level="2" onClick={go} data-to="welcomeScreen">
-					Создай свою бирку!!!
-				</Button>
+				<Button 
+					className="Button"
+					size="xl" 
+					level="2" 
+					onClick={go} 
+					data-to="welcomeScreen"
+				>Создай свою бирку!!!</Button>
 			</Div>
 
 		</Group>
