@@ -4,12 +4,25 @@ import {Panel, PanelHeader, Group, Button, Div, FixedLayout} from '@vkontakte/vk
 import '../style.css';
 
 // Человек залогинился. Нужно обратиться к нему по ФИО и уже потом говорить, что мы предлагаем.
+//{this.props.fetchedUser &&
+//	<Group title="Результат из VK Connect">
+//		<ListItem
+//			before={this.props.fetchedUser.photo_200 ? <Avatar src={this.props.fetchedUser.photo_200}/> : null}
+//			description={this.props.fetchedUser.city && this.props.fetchedUser.city.title ? this.props.fetchedUser.city.title : ''}
+//		>
+//			{`${this.props.fetchedUser.first_name} ${this.props.fetchedUser.last_name}`}
+//		</ListItem>
+//	</Group>};
 
-const WelcomeScreen = ({id, go}) => (
+
+const WelcomeScreen = ({id, go, fetchedUser}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
 		<PanelHeader>
 			О КОНСТРУКТОРЕ
 		</PanelHeader>
+
+
+
 		<Group className="Group">
 			
 			<p className="p">Мы предлагаем Вам самостоятельно создать макет бирки для печати. Если у вас возникли вопросы, то
@@ -27,6 +40,7 @@ const WelcomeScreen = ({id, go}) => (
 WelcomeScreen.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
+	fetchedUser: PropTypes.objectOf.isRequired,
 };
 
 export default WelcomeScreen;

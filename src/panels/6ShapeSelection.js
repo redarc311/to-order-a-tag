@@ -9,15 +9,25 @@ const ShapeSelection = ({id, go}) => (
 			ВЫБЕРИТЕ <strong>ФОРМУ</strong>
 		</PanelHeader>
 		<Group className="Group">
-			
-			
-
-			
 
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="viewSelection">Назад</Button>
-					<Button className="Button" size="xl" stretched level="2" onClick={go} data-to="sizeSelection">Далее</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="viewSelection"
+					>Назад</Button>
+					<Button 
+						className="Button" 
+						size="xl" 
+						stretched 
+						level="2" 
+						onClick={go} 
+						data-to="sizeSelection"
+					>Далее</Button>
 				</Div>
 			</FixedLayout>
 		</Group>

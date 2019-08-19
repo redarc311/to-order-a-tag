@@ -1,5 +1,6 @@
 import React from 'react';
-import connect from '@vkontakte/vkui-connect';
+//import connect from '@vkontakte/vkui-connect';
+import connect from '@vkontakte/vkui-connect-promise';
 import { View } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
@@ -17,6 +18,7 @@ import AddingPictures from './panels/10AddingPictures';
 import BackgroundColorSelection from './panels/11BackgroundColorSelection';
 import SendLayout from './panels/12SendLayout';
 
+connect.send('VKWebAppInit', {});
 //начало приложения
 //
 //Бред, но выставить полный список полей в пропсы приложения?
@@ -24,6 +26,31 @@ import SendLayout from './panels/12SendLayout';
 //Например выбор вида...
 //о... или не так. сделать пропс типа сеттингс. Прописать ему тип массива и писать в поля данные 
 //для передачи...
+//
+//{
+//	"type": "VKWebAppGetUserInfoResult",
+//	"data": {
+//		"id": 4746829,
+//		"first_name": "Павел",
+//		"last_name": "Розентальс",
+//		"sex": 2,
+//		"city": {
+//			"id": 73,
+//			"title": "Красноярск"
+//		},
+//		"country": {
+//			"id": 1,
+//			"title": "Россия"
+//		},
+//		"photo_100": "https://sun9-43.userapi.com/c604721/v604721829/1ee5c/GVgctVo_LAo.jpg?ava=1",
+//		"photo_max_orig": "https://sun9-26.userapi.com/c604721/v604721829/1ee59/F5Jz-GBOM_U.jpg?ava=1",
+//		"bdate": "31.5",
+//		"photo_200": "https://sun9-13.userapi.com/c604721/v604721829/1ee5b/a43KZTzWLeQ.jpg?ava=1",
+//		"timezone": 7
+//	}
+//}
+
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -47,7 +74,7 @@ class App extends React.Component {
 			userFromVkApi: ""
 		};
 	}
-// так. Тут определяется событие когда компонент прорисован на экране
+// так. Тут определяется событие захвата пользователя вконтакта, когда компонент прорисован на экране
 	componentDidMount() {
 		connect.subscribe((e) => {
 			switch (e.detail.type) {
@@ -70,8 +97,8 @@ class App extends React.Component {
 	render() {
 		return (			
 			<View activePanel={this.state.activePanel}>
-				<Home id="home" go={this.go} />
-				<WelcomeScreen id="welcomeScreen" go={this.go} />
+				<Home id="home" fetchedUser={this.state.fetchedUser} go={this.go} />
+				<WelcomeScreen fetchedUser={this.state.fetchedUser} id="welcomeScreen" go={this.go} />
 				<TypeSelection id="typeSelection" go={this.go} /> 	
 				<MaterialSelection id="materialSelection" go={this.go} />
 				<ViewSelection id="viewSelection" go={this.go} />
@@ -81,7 +108,7 @@ class App extends React.Component {
 				<TextColorSelection id="textColorSelection" go={this.go} />
 				<AddingPictures id="addingPictures" go={this.go} />  
 				<BackgroundColorSelection id="backgroundColorSelection" go={this.go} />
-				<SendLayout id="sendLayout" go={this.go} />
+				<SendLayout id="sendLayout" fetchedUser={this.state.fetchedUser} go={this.go} />
 			</View>
 		);
 	}
