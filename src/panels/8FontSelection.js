@@ -42,18 +42,13 @@ const FontSelection = ({id, go}) => (
 		<PanelHeader>
 			ВЫБЕРИТЕ <strong>ШРИФТ</strong>
 		</PanelHeader>
-
 			<Group className="Group">
-
 				Тут используем Input.
-				
-
 				<Input 
 					top="Имя" 
 					placeholder="Начните вводить текст"
 					alignment="center"
 					/>
-
 				<FixedLayout vertical="bottom">
 					<Div style={{display: 'flex'}}>
 						<Button 
@@ -77,7 +72,6 @@ const FontSelection = ({id, go}) => (
 			</Group>
 	</Panel>
 );
-
 
 FontSelection.propTypes = {
 	id: PropTypes.string.isRequired,

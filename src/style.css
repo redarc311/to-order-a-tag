@@ -25,7 +25,7 @@
     background: #E27974;
 }
 
-.Button {
+.logoButton {
     color: #E27974;
     font-family: "Myriad Pro";
     font-weight: lighter;
@@ -35,7 +35,7 @@
     border-radius: 500px;
 }
 
-.Button2 {
+.Button74 {
     color: #ffffff;
     font-family: "Myriad Pro";
     font-weight: lighter;
@@ -44,6 +44,10 @@
     background-color: #3B3646;
     border-radius: 0px;
     border-block-color: #000000;
+}
+
+.FixedLayout {
+    background-color: #3B3646;
 }
 
 .HorizontalScroll {

@@ -7,7 +7,7 @@ function sendLayout(Arr) {
 	console.log(Arr)
 } 
 
-const MaterialSelection = ({id, go, fetchedUser}) => (
+const SendLayout = ({id, go, fetchedUser}) => (
 	<Panel id={id} style={{overflow: 'hidden'}}>
 		<PanelHeader>
 			ОТПРАВКА ЗАКАЗА
@@ -38,10 +38,10 @@ const MaterialSelection = ({id, go, fetchedUser}) => (
 	</Panel>
 );
 
-
-MaterialSelection.propTypes = {
+SendLayout.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
+	fetchedUser: PropTypes.object.isRequired,
 };
 
-export default MaterialSelection;
+export default SendLayout;

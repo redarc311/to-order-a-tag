@@ -4,7 +4,6 @@ import connect from '@vkontakte/vkui-connect-promise';
 import { View } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 
-// Тут импорты описания страниц
 import Home from './panels/1Home';
 import WelcomeScreen from './panels/2WelcomeScreen';
 import TypeSelection from './panels/3TypeSelection';
@@ -27,7 +26,7 @@ connect.send('VKWebAppInit', {});
 //о... или не так. сделать пропс типа сеттингс. Прописать ему тип массива и писать в поля данные 
 //для передачи...
 //
-//{
+//const fetchedUser = {
 //	"type": "VKWebAppGetUserInfoResult",
 //	"data": {
 //		"id": 4746829,
@@ -49,8 +48,7 @@ connect.send('VKWebAppInit', {});
 //		"timezone": 7
 //	}
 //}
-
-
+//У нас все настройки в пропсах. Нужно в конце получить эти данные в объект конечной отправки и отдать на выход приложения для отправки.
 
 class App extends React.Component {
 	constructor(props) {
@@ -58,7 +56,7 @@ class App extends React.Component {
 
 		this.state = { 
 			activePanel: 'home',
-			fetchedUser: null,
+//			fetchedUser: {},
 			UserAutorization: "",
 			Type: "",
 			Material: "",
@@ -88,12 +86,18 @@ class App extends React.Component {
 		connect.send('VKWebAppGetUserInfo', {});
 	}
 
+	sendLayout = (e) => {
+		//функция отправки сообщения в ВК
+		//получает аргументы из стейтов
+		//и формирует текст конкатенацией
+		//
+	}
+
 	go = (e) => {
 		this.setState({ activePanel: e.currentTarget.dataset.to });
 		console.log('переход к следующей странице');
 	};
 
-//самое интересное. Рендерим экраны
 	render() {
 		return (			
 			<View activePanel={this.state.activePanel}>
@@ -113,5 +117,4 @@ class App extends React.Component {
 		);
 	}
 }
-
 export default App;

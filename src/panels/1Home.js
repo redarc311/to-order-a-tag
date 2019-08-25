@@ -18,11 +18,10 @@ const Home = ({ id, go}) => (
 			
 			<Div>
 				<img className="logo" src={logo} alt="Birki Firma Logo"/>
-				
 				<p className="p">Добро пожаловать!!!</p>
 
 				<Button 
-					className="Button"
+					className="logoButton"
 					size="xl" 
 					level="2" 
 					onClick={go} 
@@ -37,6 +36,7 @@ const Home = ({ id, go}) => (
 Home.propTypes = {
 	id: PropTypes.string.isRequired,
 	go: PropTypes.func.isRequired,
+	fetchedUser: PropTypes.object.isRequired,
 };
 
 export default Home;

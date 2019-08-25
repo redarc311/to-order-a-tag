@@ -17,8 +17,6 @@ const TypeSelection = ({id, go}) => (
 			ВЫБЕРИТЕ <strong>ТИП</strong>
 		</PanelHeader>
 		<Group className="Group1">
-
-			
 				<Div style={{display: 'flex'}}>
 					<Button className="Button" after={<img src={prishivnaya} alt="prishivnaya"/>} size="xl" stretched level="2" onClick={go} data-to="welcomeScreen">ПРИШИВНАЯ</Button>
 				</Div>
@@ -35,7 +33,6 @@ const TypeSelection = ({id, go}) => (
 				<List>
                 	<Cell multiline>A Series of Unfortunate Events, Archer, Brooklyn Nine-Nine, Doctor Who, Game of Thrones</Cell>
                 </List>
-
 
 			<FixedLayout vertical="bottom">
 				<Div style={{display: 'flex'}}>
