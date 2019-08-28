@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5e807a667fd3a3be4182",
-    "url": "/to-order-a-tag/static/css/main.c905db4a.chunk.css"
+    "revision": "bc40a8471ab5f9c1ce26",
+    "url": "/to-order-a-tag/static/css/main.8ea8c7f3.chunk.css"
   },
   {
-    "revision": "5e807a667fd3a3be4182",
-    "url": "/to-order-a-tag/static/js/main.e584c3a4.chunk.js"
+    "revision": "bc40a8471ab5f9c1ce26",
+    "url": "/to-order-a-tag/static/js/main.8bfd60e4.chunk.js"
   },
   {
     "revision": "711ae89211eb7df74fef",
     "url": "/to-order-a-tag/static/js/runtime~main.9bd62471.js"
   },
   {
-    "revision": "d005dcfe5c801c802d49",
+    "revision": "c7e29bab629b9968f2b5",
     "url": "/to-order-a-tag/static/css/2.ae363021.chunk.css"
   },
   {
-    "revision": "d005dcfe5c801c802d49",
-    "url": "/to-order-a-tag/static/js/2.9e76337b.chunk.js"
+    "revision": "c7e29bab629b9968f2b5",
+    "url": "/to-order-a-tag/static/js/2.7c2f114d.chunk.js"
   },
   {
     "revision": "8bedc6c890caefbfcef4f45015f09f0e",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/to-order-a-tag/static/media/termo@4x.70775de3.svg"
   },
   {
-    "revision": "b933283d411e1f4843a0a2853407b714",
+    "revision": "0a6f8963bb2e5cbd42b895d7658d7b0a",
     "url": "/to-order-a-tag/index.html"
   }
 ];
