@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "bc40a8471ab5f9c1ce26",
+    "revision": "9c8e26d340d7bb820022",
     "url": "/to-order-a-tag/static/css/main.8ea8c7f3.chunk.css"
   },
   {
-    "revision": "bc40a8471ab5f9c1ce26",
-    "url": "/to-order-a-tag/static/js/main.8bfd60e4.chunk.js"
+    "revision": "9c8e26d340d7bb820022",
+    "url": "/to-order-a-tag/static/js/main.723b9c2d.chunk.js"
   },
   {
     "revision": "711ae89211eb7df74fef",
     "url": "/to-order-a-tag/static/js/runtime~main.9bd62471.js"
   },
   {
-    "revision": "c7e29bab629b9968f2b5",
+    "revision": "bd44e1461544e324a6ae",
     "url": "/to-order-a-tag/static/css/2.ae363021.chunk.css"
   },
   {
-    "revision": "c7e29bab629b9968f2b5",
-    "url": "/to-order-a-tag/static/js/2.7c2f114d.chunk.js"
+    "revision": "bd44e1461544e324a6ae",
+    "url": "/to-order-a-tag/static/js/2.7dc9a3b2.chunk.js"
   },
   {
     "revision": "8bedc6c890caefbfcef4f45015f09f0e",
@@ -36,7 +36,7 @@ self.__precacheManifest = [
     "url": "/to-order-a-tag/static/media/termo@4x.70775de3.svg"
   },
   {
-    "revision": "0a6f8963bb2e5cbd42b895d7658d7b0a",
+    "revision": "c3a2d8d2e284cbfb873277f3b50a9bc4",
     "url": "/to-order-a-tag/index.html"
   }
 ];
